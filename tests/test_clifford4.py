@@ -21,7 +21,7 @@ import math
 import numpy as np
 import torch
 
-from clifford4_core_v0_2_1 import Clifford4, python_clifford_blade_coeff
+from clifford4_core import Clifford4, python_clifford_blade_coeff
 
 
 def run_cl4_unit_tests() -> None:

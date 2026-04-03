@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clifford4-core"
+version = "0.2.1"
+description = "PyTorch-based Cl(4,0) multivector library with tensorized products"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+  {name = "OpenAI"}
+]
+dependencies = [
+  "numpy>=1.24",
+  "torch>=2.1"
+]
+
+[project.optional-dependencies]
+dev = [
+  "clifford",
+  "matplotlib",
+  "pytest"
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]

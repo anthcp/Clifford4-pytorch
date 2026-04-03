@@ -15,7 +15,7 @@ from typing import Callable, Dict, List
 import numpy as np
 import torch
 
-from clifford4_core_v0_2_1 import Clifford4, python_clifford_blade_coeff
+from clifford4_core import Clifford4, python_clifford_blade_coeff
 
 
 def _sync_if_cuda(device: torch.device) -> None:
