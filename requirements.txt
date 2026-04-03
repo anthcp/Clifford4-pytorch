@@ -1,0 +1,9 @@
+numpy
+matplotlib
+scipy
+pandas
+pyvista
+torch 
+torchvision
+clifford
+galgebra
